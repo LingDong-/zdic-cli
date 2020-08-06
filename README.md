@@ -1,13 +1,12 @@
 # zdic-cli
 
-An alternative, offline, regex-supporting, command-line interface to [zdic (漢典)](zdic.net), featuring:
+An alternative, offline, regex-supporting, command-line interface to [zdic (漢典)](https://zdic.net), featuring:
 
 - No internet connection required
 - Full text search with regex: a command for finding characters/phrases in body text of definitions.
 - Colorful text for highlighting entries
 
 
-![](screenshots/screen000.png)
 ![](screenshots/screen001.png)
 ![](screenshots/screen002.png)
 ![](screenshots/screen003.png)
@@ -16,7 +15,7 @@ An alternative, offline, regex-supporting, command-line interface to [zdic (漢�
 
 ## Downloads
 
-Standalone version available for windows, mac and linux. Please refer to the Releases page.
+Standalone version available for windows, mac and linux. Please refer to the [Releases](https://github.com/LingDong-/zdic-cli/releases) page.
 
 ## Usage
 
@@ -30,12 +29,12 @@ txt 甲        list words whose full entry text contains 甲 (regex supported)
 sel n         display entry at previously returned list index n
 ```
 
-`def` is probably the most common one for simply looking up characters/words. `pre` `has` `txt` will return an enumerated list listing all elligible entries, and `sel 0`/`sel 1`/`sel n` can be used to select from the list.
+`def` is probably the most common one for simply looking up characters/words. `pre` `has` `txt` will return an enumerated list listing all eligible entries, and `sel 0`/`sel 1`/`sel n` can be used to select from the list.
 
 
 ## Development setup
 
-**This section is for compiling from source (and is somewhat complex), if you just would like to use the software, please check out the Releases page.**
+**This section is for compiling from source (and is somewhat complex), if you just would like to use the software, please check out the [Releases](https://github.com/LingDong-/zdic-cli/releases) page.**
 
 ### Dependencies
 
@@ -45,7 +44,7 @@ sel n         display entry at previously returned list index n
 
 ### Downloading and compiling the dictionary files
 
-This repo does not contain the dictonary files themselves as they're too large. Instead, a shell script (`setup.sh`) is provided to automate the process:
+This repo does not contain the dictionary files themselves as they're too large. Instead, a shell script (`setup.sh`) is provided to automate the process:
 
 - Automatically download the original Kindle dictionary format (.PRC) from the internet. The download link hardcoded in `setup.sh` might fail in the future, in which case a google search for `汉典.prc` should yield alternative resources.
 - Automatically download a python library (kroo/mobi-python) for parsing mobi files. A rather old library and have some oddities, a find-and-replace script will be automatically run to patch some glitches in the source code :P
@@ -82,7 +81,9 @@ Tip: to run the software by typing `zdic` anywhere, you can symlink it to `/user
 ln -s /user/bin/zdic path/to/zdic-cli/zdic-cli
 ```
 
+## Disclaimers
 
+Not affiliated with [zdic.net](https://www.zdic.net/), blah, blah...
 
-
+The copyright of the text of the dictionary entries belongs to original authors, blah, blah...
 

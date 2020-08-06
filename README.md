@@ -48,13 +48,13 @@ sel n         display entry at previously returned list index n
 This repo does not contain the dictionary files themselves as they're too large. Instead, a shell script (`setup.sh`) is provided to automate the process:
 
 - Automatically download the original Kindle dictionary format (.PRC) from the internet. The download link hardcoded in `setup.sh` might fail in the future, in which case a google search for `汉典.prc` should yield alternative resources.
-- Automatically download a python library (kroo/mobi-python) for parsing mobi files. A rather old library and have some oddities, a find-and-replace script will be automatically run to patch some glitches in the source code :P
+- Automatically download a python library ([kroo/mobi-python](https://github.com/kroo/mobi-python)) for parsing mobi files. A rather old library and have some oddities, so a find-and-replace script will be automatically run to patch some glitches in the source code :P
 - `python/to_txt.py` is run to extract a raw `txt` file from the kindle format `prc`.
 - `phthon/to_json.py` is run to generate a directory of `json` files from the `txt` to make lookup and formatting more efficient.
 
 Run the shell script with:
 
-```
+```bash
 sh setup.sh
 ```
 
@@ -64,13 +64,13 @@ At this point you'll have `zdic.prc`, `zdic.txt` and directory `zdic_json/`. Onl
 
 At this point you can also run the software by simply doing:
 
-```
+```bash
 node index.js
 ```
 
 You can also package it into a binary using
 
-```
+```bash
 pkg .
 ```
 
@@ -78,8 +78,8 @@ provided you have the node and pkg dependencies installed.
 
 Tip: to run the software by typing `zdic` anywhere, you can symlink it to `/user/bin`, e.g.
 
-```
-ln -s /user/bin/zdic path/to/zdic-cli/zdic-cli
+```bash
+ln -s /usr/local/bin/zdic path/to/zdic-cli/zdic-cli
 ```
 
 ## Disclaimers

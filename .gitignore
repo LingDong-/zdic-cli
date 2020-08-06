@@ -1,0 +1,7 @@
+.DS_Store
+*/DS_Store
+zdic.prc
+zdic.txt
+zdic_json/*
+tools/mobi/*
+zdic-cli-*

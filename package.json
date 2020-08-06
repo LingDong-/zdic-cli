@@ -1,0 +1,7 @@
+{
+	"name":"zdic-cli",
+	"pkg": {
+		"assets": "zdic_json/*"
+	},
+	"bin":"index.js"
+}

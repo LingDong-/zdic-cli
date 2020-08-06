@@ -76,7 +76,7 @@ pkg .
 
 provided you have the node and pkg dependencies installed.
 
-Tip: to run the software by typing `zdic` anywhere, you can symlink it to `/user/bin`, e.g.
+Tip: to run the software by typing `zdic` anywhere, you can symlink it to `/usr/bin` or `/usr/local/bin`, e.g.
 
 ```bash
 ln -s path/to/zdic-cli/zdic-cli /usr/local/bin/zdic

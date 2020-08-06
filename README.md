@@ -1,7 +1,8 @@
 # zdic-cli
 
-An alternative, offline, regex-supporting, command-line interface to [zdic (漢典)](https://zdic.net), featuring:
+An alternative, offline, regex-supporting, command-line interface to [zdic (漢典)](https://zdic.net), a comprehensive Chinese language dictionary, featuring:
 
+- More than 460,000 entries
 - No internet connection required
 - Full text search with regex: a command for finding characters/phrases in body text of definitions.
 - Colorful text for highlighting entries
